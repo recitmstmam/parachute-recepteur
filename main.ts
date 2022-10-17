@@ -25,5 +25,5 @@ basic.forever(function () {
     serial.writeValue("acc", Math.abs(Math.sqrt(acc_x * acc_x + (acc_y * acc_y + acc_z * acc_z)) * 9.81 / 1024 - 9.81))
     serial.writeLine("" + (input.runningTime() / 1000))
     led.toggle(0, 0)
-    basic.pause(100)
+    basic.pause(20)
 })
