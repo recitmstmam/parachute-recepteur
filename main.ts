@@ -1,12 +1,10 @@
+radio.onReceivedNumber(function (receivedNumber) {
+    acc_y = Math.abs(receivedNumber)
+})
 input.onButtonPressed(Button.A, function () {
     radio.sendString("go")
     basic.pause(100)
     control.reset()
-})
-radio.onReceivedValue(function (name, value) {
-    if (name == "y") {
-        acc_y = Math.abs(value)
-    }
 })
 let acc_y = 0
 radio.setGroup(1)
